@@ -1,0 +1,24 @@
+<div class="containe">
+<table class="table container">
+    <thead>
+      <tr>
+        <th scope="col">SELECT</th>
+        <th scope="col">PLAYER NAME</th>
+        <th scope="col">LEVEL</th>
+        <th scope="col">AVATAR</th>
+        <th scope="col">BET</th>
+        <th scope="col">LOST</th>
+        <th scope="col">PRICE</th>
+      </tr>
+      
+    </thead>
+    <tbody>
+      <tr  *ngFor="let person of persons">
+        <th scope="row">{{person.Name}}</th>
+        <td >{{person.Name}}</td>
+        <td >{{person.Bet }}</td>
+        <td><img class="img-rounded" src={{person.ProfileImage}} style="height: 20px; width: 20px;"></td> 
+      </tr> 
+    </tbody>
+  </table>
+</div>
